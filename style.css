@@ -1,0 +1,182 @@
+body, html {
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to bottom, #e7d9cd72, #feecc476, #f1a1a14e, #ace9f695),
+                url('res/Untitled\ design.svg');
+    background-position: center;
+    background-size: contain;
+}
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Outfit', sans-serif;
+}
+
+.title {
+    margin-top: 10px;
+    margin-left: 60px;
+    font-size: 60px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+
+.title .codes {
+    font-family: 'Space Mono', monospace;
+    font-weight: 200;
+}
+
+.author {
+    margin-left: 60px;
+    font-size: 23px;
+    margin-top: -40px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 100;
+    margin-bottom: -10px;
+}
+
+.container .slider-wrapper {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.container .slider-wrapper .card-list .card-item {
+    box-shadow: 0px 0px 22px 1px rgba(255, 255, 255, 0.488);
+    -webkit-box-shadow: 0px 0px 22px 1px rgba(255, 255, 255, 0.563);
+    -moz-box-shadow: 0px 0px 22px 1px rgba(255, 255, 255, 0.463);
+    user-select: none;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 5px;
+    height: 320px;
+    width: 100%;
+    background-color: #181818db;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.51);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;  
+    backdrop-filter: blur(1px);
+}
+
+.container .slider-wrapper .card-list .card-item:hover {
+    background-color: #00000087;
+    backdrop-filter: blur(2px);
+
+}
+
+
+.container .slider-wrapper .card-list .card-item .card-img {
+    align-self: center;
+    height: 200px;
+    width: 460px;
+    background-color: #ffffff94;
+    margin-bottom: 9px;
+    margin-right: -5px;
+    margin-left: -10px;
+    border-radius: 4px;
+}
+
+.container .slider-wrapper .card-list .card-item .card-img.ealsweb {
+    background: url('res/Screenshot\ \(241\).png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .slider-wrapper .card-list .card-item .card-img.hrvxdev {
+    background: url('res/hrvxdev.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .slider-wrapper .card-list .card-item .card-img.physci {
+    background: url('res/science.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container .slider-wrapper .card-list .card-item .card-title {
+    height: 30px;
+    overflow: auto;
+    line-height: .91;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 600;
+}
+
+.container .slider-wrapper .card-list .card-item .card-desc {
+    color: #f3f3f3;
+    font-size: 15px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 200;
+}
+
+.swiper-slide {
+    margin: 0 -8px; /* Adjust margin as needed */
+}
+
+@media (max-width: 800px) {
+    .container .slider-wrapper {
+        max-width: 320px;
+        margin: 0 10px 40px;
+        
+    }
+
+    .container .slider-wrapper .card-list {
+        max-width: 900px;
+    }
+
+    .container .slider-wrapper .card-list .card-item {
+        align-items: center;
+        height: 300px;
+        width: 30px;
+    }
+
+    .container .slider-wrapper .card-list .card-item .card-img {
+        width: 96%;
+    }
+
+    .container .slider-wrapper .card-list .card-item .card-desc {
+        font-size: 15px;
+        overflow: auto;
+    }
+
+    .container .slider-wrapper .card-list .card-item .card-title {
+        font-size: 18px;
+    }
+
+    .title {
+        margin: 0;
+        font-size: 40px;
+    }
+
+    .author {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    body, html {
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        font-size: 12px;
+        width: 100%;
+    }
+}
