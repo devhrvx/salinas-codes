@@ -17,37 +17,37 @@
     <div class="container swiper">
         <div class="slider-wrapper">
             <div class="card-list swiper-wrapper">
-                <div class="card-item swiper-slide">
-                    <div class="card-img physci"></div>
+                <div class="card-item swiper-slide" onclick="goTo('/physical_science/index.html')">
+                    <div class="card-img physci" ></div>
                     <div class="card-title">Physical Science | Active Ingredients</div>
                     <div class="card-desc">Website about Chemical active ingredients description, knowledge, and more!</div>
                 </div>
 
-                <div class="card-item swiper-slide">
-                    <div class="card-img ealsweb"></div>
+                <div class="card-item swiper-slide" onclick="goTo('https://ealsweb.me')">
+                    <div class="card-img ealsweb" ></div>
                     <div class="card-title">Solar System and the Universe</div>
                     <div class="card-desc">Website about Chemical active ingredients description, knowledge, and more!</div>
                 </div>
 
-                <div class="card-item swiper-slide">
+                <div class="card-item swiper-slide"  onclick="goTo('https://hrvx.dev')">
                     <div class="card-img hrvxdev"></div>
                     <div class="card-title">hrvx.dev</div>
                     <div class="card-desc">Portfolio website of John Harvey Salinas. About, Projects, and Connect or contacts(socials).</div>
                 </div>
 
-                <div class="card-item swiper-slide">
-                    <div class="card-img physci"></div>
+                <div class="card-item swiper-slide" onclick="goTo('/physical_science/index.html')">
+                    <div class="card-img physci" ></div>
                     <div class="card-title">Physical Science | Active Ingredients</div>
                     <div class="card-desc">Website about Chemical active ingredients description, knowledge, and more!</div>
                 </div>
 
-                <div class="card-item swiper-slide">
+                <div class="card-item swiper-slide" onclick="goTo('https://ealsweb.me')">
                     <div class="card-img ealsweb"></div>
                     <div class="card-title">Solar System and the Universe</div>
                     <div class="card-desc">Website about Chemical active ingredients description, knowledge, and more!</div>
                 </div>
 
-                <div class="card-item swiper-slide">
+                <div class="card-item swiper-slide" onclick="goTo('https://hrvx.dev')">
                     <div class="card-img hrvxdev"></div>
                     <div class="card-title">hrvx.dev</div>
                     <div class="card-desc">Portfolio website of John Harvey Salinas. About, Projects, and Connect or contacts(socials).</div>
@@ -61,5 +61,10 @@
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+            function goTo(source) {
+            window.open(source, '_self');
+            };
+    </script>
 </body>
 </html>
