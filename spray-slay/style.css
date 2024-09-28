@@ -53,7 +53,7 @@ header{
     padding: 0 50px;
     top: 0;
     position: sticky;
-    z-index: 9999;
+    z-index: 999;
     backdrop-filter: blur(1px);
 }
 
@@ -121,7 +121,8 @@ nav ul li a:active{
 }
 
 .container .spray-slide {
-    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: 700;
+    font-family: 'Saira Condensed', sans-serif;
     position: relative;
     white-space: nowrap;
     transition: transform 0.3s ease, opacity 0.3s ease;
@@ -136,3 +137,4 @@ nav ul li a:active{
 .right {
     transform: translateX(100%);
 }
+

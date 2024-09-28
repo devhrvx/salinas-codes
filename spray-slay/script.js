@@ -3,7 +3,7 @@ window.addEventListener('scroll', () => {
     const leftText = document.querySelector('.left');
     const rightText = document.querySelector('.right');
     
-    if (scrollPosition > 10) {
+    if (scrollPosition > 6) {
         leftText.style.transform = 'translateX(0)'; 
         rightText.style.transform = 'translateX(0)';
         leftText.style.opacity = 1;
@@ -15,4 +15,3 @@ window.addEventListener('scroll', () => {
         rightText.style.opacity = 0;
     }
 });
-  
