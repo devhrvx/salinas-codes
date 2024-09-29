@@ -15,3 +15,12 @@ window.addEventListener('scroll', () => {
         rightText.style.opacity = 0;
     }
 });
+
+var prodInfo = {
+    name: 'Spray and Slay',
+    description: 'Multi-benefit sunscreen spray',
+    effects: 'Cooling, Whitening, Anti-aging, Anti-microbial,and UV Protection',
+    activeIngredients: 'Retinol, Niacinamide, Menthol, Titanium dioxide, Zinc oxide, Glycolic acid, Vitamin C, Aloe Vera extract,and Triclosan',
+
+
+};
