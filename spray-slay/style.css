@@ -15,6 +15,7 @@ body, html{
     background: #f6f6f6;
     /* background: linear-gradient(to bottom, #e7d9cd72, #feecc476,#ee77774e,#f1a1a14e, #ace9f695); */
     scroll-behavior: smooth;
+    max-width: 100%;
 }
 
 
@@ -154,7 +155,6 @@ nav ul li a:active{
 
 
 .prod-info {
-    flex: 1;
     width: 74%;
     height: 1100px;
     padding: 20px;
@@ -264,8 +264,8 @@ nav ul li a:active{
 }
 
 .card-list .card-item .var-img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 250px;
     border-radius: 12px;
     background-position: center;
     background-size: cover;
@@ -292,6 +292,7 @@ nav ul li a:active{
 }
 
 .slider-wrapper .swiper-slide-button {
+    font-weight: 900;
     color: #fa65f0;
     transition: .3s ease;
     margin-top: -50px;
@@ -302,7 +303,7 @@ nav ul li a:active{
 }
 
 .lemon {
-    background-image: url('res/Lemon.png');
+    background-image: url('res/lemon\ splash.png');
 }
 
 .aloe {
@@ -312,6 +313,8 @@ nav ul li a:active{
 .ice {
     background-image: url('res/Lemon.png');
 }
+
+
 
 
 @media (max-width: 700px) {

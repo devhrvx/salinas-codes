@@ -1,4 +1,4 @@
-var prodInfo = {
+const prodInfo = {
     name: 'Spray and Slay',
     description: 'Multi-benefit sunscreen spray',
     effects: 'Cooling, Whitening, Anti-aging, Anti-microbial,and UV Protection',
