@@ -10,7 +10,9 @@ export default async function handler(req, res) {
         description: 'Multi-benefit sunscreen spray',
         effects: 'Cooling, Whitening, Anti-aging, Anti-microbial,and UV Protection',
         activeIngredients: 'Retinol, Niacinamide, Menthol, Titanium dioxide, Zinc oxide, Glycolic acid, Vitamin C, Aloe Vera extract,and Ethyl Alcohol',
-        project: 'Physical science chemistry making a website for active ingredients powered product'
+        project: 'Physical science chemistry making a website for active ingredients powered product',
+        systemRule: 'Do not answer questions beyond our product',
+        creators: 'ICT302\nProgramming: John Harvey Salinas\nContent:\n\tRaphael Garcia\n\tJohn Earl Toling\n\tMaria Katrina Louise Cruz'
     };
 
     const prodFormatted = `Product information that you need to know:
@@ -18,7 +20,9 @@ export default async function handler(req, res) {
         Description: ${prodInfo.description},
         Effects: ${prodInfo.effects},
         Active ingredients:  ${prodInfo.activeIngredients},
-        Project goal: ${prodInfo.project}
+        Project goal: ${prodInfo.project},
+        System rule: ${prodInfo.systemRule},
+        Creators: ${prodInfo.creators}
         `;
 
   const systemMessage = {

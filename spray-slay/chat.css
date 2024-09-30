@@ -147,9 +147,21 @@ nav ul li a:active{
     font-weight: 700;
     border-radius: 20px;
     transition: .3s ease;
+    margin-bottom: 20px;
 }
 
 #send-btn:hover {
     background-color: #b9268d;
     color: white;
+}
+
+#openai {
+    width: 100px;
+    height: 20px;
+    background-image: url('res/OpenAI_Logo.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: .7;
 }
