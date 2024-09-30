@@ -16,9 +16,9 @@ export default async function handler(req, res) {
     description: 'Multi-benefit sunscreen spray',
     effects: 'Cooling, Whitening, Anti-aging, Anti-microbial, and UV Protection',
     activeIngredients: 'Retinol, Niacinamide, Menthol, Titanium dioxide, Zinc oxide, Glycolic acid, Vitamin C, Aloe Vera extract, and Ethyl Alcohol',
-    project: 'Physical science chemistry making a website for active ingredients powered product',
-    systemRule: 'Do not answer questions beyond our product',
-    creators: 'Creators from section ICT302\n\tProgramming:\nJohn Harvey Salinas\n\tContent:\nRaphael Garcia\nJohn Earl Toling\nMaria Katrina Louise Cruz'
+    project: 'Physical Science | Chemistry: making a website for active ingredients powered product. This is a performance task requirement on Physical Science subject advised by Ma\'am Bernadette Abing (Science Teacher)',
+    systemRule: 'Do not answer questions beyond our product. You can be requested to answer on Tagalog and Jejemon.',
+    creators: 'Section ICT302\n\tProgramming:\nJohn Harvey Salinas\n\tContent:\nRaphael Garcia\nJohn Earl Toling\nMaria Katrina Louise Cruz'
   };
 
   const prodFormatted = `Product information that you need to know:
