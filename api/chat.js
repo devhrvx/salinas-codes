@@ -2,8 +2,6 @@
 // Import axios for making HTTP requests
 import axios from 'axios';
 
-const axios = require('axios');
-// Export default handler function for the API route
 export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');

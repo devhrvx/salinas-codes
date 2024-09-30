@@ -27,20 +27,28 @@
         <button id="send-btn" onclick="sendMessage()">Send</button>
         <div id="openai" onclick="window.open('https://openai.com/', '_blank')"></div>
     </div>
-
     <script>
-    async function sendMessage() {
-    const message = document.getElementById('user-input').value;
-
-    const response = await fetch('/api/chat', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message }),
-    });
-
-    const data = await response.json();
-    document.getElementById('response-output').innerText = data.response;
-    }
-    </script>
+        async function sendMessage() {
+            const message = document.getElementById('user-input').value;
+        
+            try {
+                const response = await fetch('/api/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message }),
+                });
+        
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+        
+                const data = await response.json();
+                document.getElementById('response-output').innerText = data.response;
+            } catch (error) {
+                console.error('Error:', error);
+                document.getElementById('response-output').innerText = 'An error occurred. Please try again.';
+            }
+        }
+        </script>        
 </body>
 </html>
