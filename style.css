@@ -103,8 +103,8 @@ p {
 }
 
 .container .slider-wrapper .card-list .card-item .card-img.physci {
-    background: url('res/science.png');
-    background-size: cover;
+    background: url('spray-slay/res/logo\ \(20240928093540\).png');
+    background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
 }
