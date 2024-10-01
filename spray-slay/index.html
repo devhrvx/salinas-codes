@@ -14,28 +14,28 @@
 </head>
 <body>
     <header>
-        <h2 class="logo"></h2>
+        <h2 class="logo" onclick="window.open('#home', '_self')"></h2>
         <nav>
          <ul>
-            <li><a href="">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#benefits">Benefits</a></li>
             <li><a href="#variants">Variants</a></li>
-            <li><a href="#usage">Usage</a></li>
-            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#specifications">Specifications</a></li>
+            <li><a href="#about_us">About us</a></li>
             <li><a href="chat.html">Chat AI</a></li>
         </ul>
         </nav>
     </header>
-
-    <div class="intro" id="home">
+    <div id="home"></div>
+    <div class="intro">
         <div class="spray-slide left">Spray</div>
         <div class="spray-overview">
             <img class="spray" src="res/Lemon.png" alt="">
         </div>
         <div class="spray-slide right">Slay</div>
     </div>
-
-    <div class="prod-info" id="benefits">
+    <div id="benefits"></div>
+    <div class="prod-info">
         <div class="info">
             <div class="image uv">
                 
@@ -84,8 +84,9 @@
         </div>
     </div>
     <br>
-
-    <div class="container swiper" id="variants">
+    <div id="variants"></div>
+    <div class="vars"><h3>Product variants:</h3></div>
+    <div class="container swiper">
         <div class="slider-wrapper">
             <div class="card-list swiper-wrapper">
                 
@@ -134,6 +135,91 @@
             <div class="swiper-slide-button swiper-button-prev"></div>
             <div class="swiper-slide-button swiper-button-next"></div>
         </div>
+    </div>
+    <div id="specifications"></div>
+    <div class="specs">
+        <div class="sides">
+            <p>
+                <span style="font-size: 23px; font-weight: 600;">Product Specifications:</span>
+                <br><br>
+                <ul>
+                    <li><b>Height:</b> 20cm</li>
+                    <li><b>Width:</b> 7cm</li>
+                    <li><b>Volume:</b> 500ml</li>
+                </ul>
+            </p>
+            <br><br>
+            <p>
+                <span style="font-size: 23px; font-weight: 600;">How to use:</span>
+                <br><br>
+                <ol type="1">
+                    <li>Shake well before use.</li>
+                    <li>Spray generously on skin.</li>
+                    <li>Reapply as needed, especially after swimming, sweating, or towel drying.</li>
+                    <li>For best results, apply 15 minutes before sun exposure.</li>
+                    <li>Store the product properly in a cool, dry, and away from direct sunligght.</li>
+                </ol>
+            </p>
+            
+        </div>
+        <div class="sides">
+            <p>
+                <ul>
+                    <span style="font-size: 23px; font-weight: 600;">Precautions</span><br><br>
+                    <li>Avoid contact with eyes. If contact occurs, rinse thoroughly with water.
+                    </li>
+                    <li>Do not apply to broken or irritated skin.
+                    </li>
+                    <li>Keep out of reach of children.
+                    </li>
+                    <li>If irritation or rash occurs, discontinue use and consult a doctor.
+                    </li>
+                    <li>For external use only.
+                    </li>
+                    <li>Store in a cool, dry place, and avoid direct sunlight.
+                    </li>
+                    <li>Flammable.</li>
+                </ul>
+            </p>
+            <br><br>
+            <p>
+                <ul>
+                    <span style="font-size: 23px; font-weight: 600;">Active ingredients:</span><br><br>
+                    <li>Retinol</li>
+                    <li>Niacinamide</li>
+                    <li>Menthol</li>
+                    <li>Titanium dioxide</li>
+                    <li>Zinc oxide</li>
+                    <li>Glycolic acid</li>
+                    <li>Vitamic C</li>
+                    <li>Aloe vera extract</li>
+                    <li>Ethyl alcohol</li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div id="about_us"></div>
+
+    <div class="about-us">
+        <div class="group">
+            <div class="p-logo"></div>
+            <div class="ict"><span style="font-size: 30px;">Made by:</span><br>ICT302 <br>Group 6</div>
+        </div>
+
+        <div class="roles">
+            Programming: <br> John Harvey Salinas <br><br>
+            Content: <br>
+            John Earl Toling <br>
+            Garcia Raphael <br>
+            Ma. Katrina Louise Cruz <br>
+        </div>
+
+        <div class="links">
+            <div class="github"></div>
+            <div class="vercel"></div>
+        </div>
+
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
