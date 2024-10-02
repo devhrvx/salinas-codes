@@ -17,15 +17,17 @@
         <nav>
          <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="">Chat AI</a></li>
+            <li><a href="">Ask AI</a></li>
         </ul>
         </nav>
     </header>
 
     <div class="box-chat">
-        <div id="response-output"></div>
-        <textarea name="user-input" id="user-input" rows="4" placeholder="Ask me about Spray n' Slay..."></textarea>
-        <button id="send-btn" onclick="sendMessage()">Send</button>
+        <div id="response-output">Ask me something!</div>
+        <div class="request-box">
+            <textarea name="user-input" id="user-input" rows="4" placeholder="Ask me about Spray n' Slay..."></textarea>
+            <button id="send-btn" onclick="sendMessage()">Send</button>
+        </div>
         <div id="openai" onclick="window.open('https://openai.com/', '_blank')"></div>
     </div>
     <script>

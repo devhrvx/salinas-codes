@@ -349,6 +349,7 @@ nav ul li a:active{
 }
 
 .about-us {
+    user-select: none;
     font-family: 'Inter', sans-serif;
     padding: 20px;
     display: flex;
