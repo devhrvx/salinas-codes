@@ -19,7 +19,7 @@ export default async function handler(req, res) {
     effects: 'Cooling, Whitening, Anti-aging, Anti-microbial, and UV Protection',
     variants: 'Lemon: A refreshing and invigorating scent, perfect for a clean and citrusy aroma. Absorbs quickly, hydrating, and lightweight, perfect for a sunny day at the beach or a picnic in the park.\nAloe: Infused with soothing aloe vera, this variant provides calming hydration while offering effective sun protection. A soothing and calming scent, ideal for creating a relaxing and spa-like atmosphere.\n Ice: Cool down with our Ice variant, featuring a unique cooling sensation that revitalizes your skin as it shields you from the sun. Perfect for hot summer days or post-workout adventures.',
     activeIngredients: 'Retinol, Niacinamide, Menthol, Titanium dioxide, Zinc oxide, Glycolic acid, Vitamin C, Aloe Vera extract, and Ethyl Alcohol',
-    project: 'Physical Science | Chemistry: making a website for active ingredients powered product. This is a performance task requirement on Physical Science subject advised by Ma\'am Bernadette Abing (Science Teacher)',
+    project: 'Physical Science | Chemistry: making a website for active ingredients powered product. This is a performance task requirement on Physical Science subject advised by Ma\'am Bernadette Abing (Science Teacher, very gorgeous, very intelligent, and always blooming.)',
     systemRule: 'Do not answer with markdown formatting. Do not answer questions beyond our product. You are strictly answering in full english, but you can be requested to answer on Tagalog and Jejemon.',
     creators: 'Section ICT302\n\tProgramming:\nJohn Harvey Salinas\n\tContent:\nRaphael Garcia\nJohn Earl Toling\nMaria Katrina Louise Cruz'
   };

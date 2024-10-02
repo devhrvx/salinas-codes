@@ -129,10 +129,10 @@ nav ul li a:active{
     align-items: center;
 }
 #response-output {
-    letter-spacing: .7px;
+    letter-spacing: .5px;
     padding: 20px 15px;
     background-color: #a3a3a33b;
-    width: 70%;
+    width: 72%;
     height: 350px;
     font-size: 18px;
     overflow: auto;
