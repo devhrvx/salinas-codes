@@ -10,7 +10,7 @@ export default async function handler(req, res) {
 
   const { message } = req.body;
 
-  //Pinapagawa ni anek
+  //Object Comprog ptask
   const prodInfo = {
     name: 'Spray n\' Slay',
     description: 'Multi-benefit sunscreen spray',
