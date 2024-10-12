@@ -1,5 +1,3 @@
-//gpt-4o-mini-2024-07-18
-
 import axios from 'axios';
 
 export default async function handler(req, res) {
@@ -7,10 +5,9 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Methods', 'POST, GET, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
-
   const { message } = req.body;
 
-  //Object Comprog ptask
+  //Product information object:
   const prodInfo = {
     name: 'Spray n\' Slay',
     description: 'Multi-benefit sunscreen spray',
@@ -39,37 +36,34 @@ export default async function handler(req, res) {
     Creators: ${prodInfo.creators}
   `;
 
-    const systemMessage = {
-      role: "system",
-      content: `This project has this information you need to know to answer: ${prodFormatted}.`
-    };
+  const systemMessage = {
+    role: "system",
+    content: `This project has this information you need to know to answer: ${prodFormatted}.`
+  };
 
-    const messages = [
-      systemMessage,
-      { role: "user", content: message }
-    ];
+  const messages = [
+    systemMessage,
+    { role: "user", content: message }
+  ];
 
-    try {
-
-      const response = await axios.post(
-        'https://api.openai.com/v1/chat/completions',
-        {
-          model: "gpt-4o-mini-2024-07-18",
-          messages: messages,
+  try {
+    const response = await axios.post(
+      'https://api.openai.com/v1/chat/completions',
+      {
+        model: "gpt-4o-mini-2024-07-18",
+        messages: messages,
+      },
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+          'Content-Type': 'application/json',
         },
-        {
-          headers: {
-            Authorization: `Bearer ${process.env.OPENAI_API_KEY}`, //secret key nakalagay sa vercel
-            'Content-Type': 'application/json',
-          },
-        }
-      );
+      }
+    );
 
-      res.status(200).json({ response: response.data.choices[0].message.content });
-    } catch (error) {
-
-      // Ayaw ko 'to makita ket kelan...
-      res.status(500).json({ error: "Failed to fetch response" });
-      console.error('Error processing request:', error);
-    }
+    res.status(200).json({ response: response.data.choices[0].message.content });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch response" });
+    console.error('Error processing request:', error);
+  }
 }
